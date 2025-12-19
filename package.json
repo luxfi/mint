@@ -5,14 +5,34 @@
   "author": "Lux Partners Limited <dev@lux.partners> (https://lux.partners)",
   "license": "BSD-3-Clause",
   "private": true,
-  "description": "Lux Minting Portal",
+  "description": "Lux Minting Portal - NFT and Token Minting Platform",
   "scripts": {
-    "dev": "http-server .",
-    "build": "mkdir -p out && cp -r index.html coin credit gold pass silver validator README.md out/"
+    "dev": "next dev",
+    "build": "next build",
+    "prod": "next start",
+    "cn": "rm -rf ./.next",
+    "clean": "rm -rf ./.next && rm -rf node_modules",
+    "tc": "tsc --noEmit"
   },
-  "keywords": [],
   "dependencies": {
-    "http-server": "^14.1.1"
+    "lucide-react": "0.470.0",
+    "@luxfi/data": "1.1.1",
+    "@luxfi/ui": "5.5.2",
+    "@hanzo/ui": "5.3.22",
+    "next": "15.1.6",
+    "next-themes": "^0.2.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.6",
+    "@types/react": "18.3.14",
+    "@types/react-dom": "18.3.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3"
   },
   "packageManager": "pnpm@10.12.4"
 }
