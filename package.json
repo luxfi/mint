@@ -8,7 +8,7 @@
   "description": "Lux Minting Portal",
   "scripts": {
     "dev": "http-server .",
-    "build": "mkdir -p out && cp -r coin credit gold pass silver validator README.md out/"
+    "build": "mkdir -p out && cp -r index.html coin credit gold pass silver validator README.md out/"
   },
   "keywords": [],
   "dependencies": {
